@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malaika Rizwan — Graphic Designer</title>
+  <meta name="description" content="Portfolio of Malaika Rizwan, graphic designer and BS Computer Science student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">Malaika Rizwan</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO / ABOUT -->
+    <section class="hero" id="about">
+      <h1 class="hero-name">Malaika<br>Rizwan</h1>
+      <div class="hero-meta">
+        <p class="hero-role">Graphic Designer<br>BS Computer Science</p>
+        <p class="hero-intro">Hi, I’m Malaika Rizwan — a graphic designer and BS Computer Science student. I enjoy turning ideas into thoughtful visual experiences through design, typography, color, and composition.</p>
+        <p class="hero-line">Designing visuals that communicate clearly and feel intentional.</p>
+      </div>
+    </section>
+
+    <!-- CAROUSEL DESIGN -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>Carousel Design</h2>
+        <p>Visual storytelling through typography, composition, and engaging multi-slide content.</p>
+      </div>
+
+      <div class="carousel-block">
+        <h3>Bold &amp; Professional</h3>
+        <div class="carousel" data-gallery data-images="ca1,ca2,ca3,ca4,ca5,ca6,ca7,ca8,ca9" data-label="Bold and Professional carousel"></div>
+      </div>
+
+      <div class="carousel-block">
+        <h3>Minimal &amp; Aesthetic</h3>
+        <div class="carousel" data-gallery data-images="cb1,cb2,cb3,cb4,cb5,cb6,cb7" data-label="Minimal and Aesthetic carousel"></div>
+      </div>
+
+      <div class="carousel-block">
+        <h3>Playful &amp; Colorful</h3>
+        <div class="carousel" data-gallery data-images="cc1,cc2,cc3,cc4,cc5,cc6,cc7" data-label="Playful and Colorful carousel"></div>
+      </div>
+    </section>
+
+    <!-- BRAND IDENTITY -->
+    <section class="section" id="brand">
+      <div class="section-head">
+        <h2>Brand Identity</h2>
+      </div>
+      <div class="case-intro">
+        <h3 class="case-title">YOUCARE</h3>
+        <p class="case-sub">Skincare Brand Identity</p>
+        <p class="case-desc">A soft and modern skincare identity built around simplicity, care, and everyday self-care.</p>
+      </div>
+      <div class="brand-grid" data-gallery>
+        <img data-img="YouCare1" alt="YouCare brand identity 1">
+        <img data-img="YouCare2" alt="YouCare brand identity 2">
+        <img data-img="YouCare3" alt="YouCare brand identity 3">
+        <img data-img="YouCare4" alt="YouCare brand identity 4">
+        <img data-img="YouCare5" alt="YouCare brand identity 5">
+        <img data-img="YouCare6" alt="YouCare brand identity 6">
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA DESIGN -->
+    <section class="section" id="social">
+      <div class="section-head">
+        <h2>Social Media Design</h2>
+        <p>Social content designed to communicate ideas clearly while staying visually engaging and consistent.</p>
+      </div>
+      <div class="social-grid" data-gallery>
+        <img data-img="SocialMediaPost1" alt="Social media post design 1">
+        <img data-img="SocialMediaPost2" alt="Social media post design 2">
+        <img data-img="SocialMediaPost3" alt="Social media post design 3">
+      </div>
+    </section>
+
+    <!-- STORY DESIGN -->
+    <section class="section" id="stories">
+      <div class="section-head">
+        <h2>Story Design</h2>
+      </div>
+      <div class="story-grid" data-gallery>
+        <img data-img="Story1" alt="Story design 1">
+        <img data-img="Story2" alt="Story design 2">
+        <img data-img="Story3" alt="Story design 3">
+      </div>
+      <p class="story-note">I also create interactive Instagram and Facebook stories using platform features to make content more engaging.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <h2>LET’S TURN YOUR IDEAS INTO VISUALS.</h2>
+      <p class="cta-text">Have an idea, brand, campaign, or story in mind? I can help turn it into thoughtful visuals that communicate and connect.</p>
+      <p class="cta-lead">Let’s work together.</p>
+      <div class="cta-links">
+        <a href="tel:+923323928403">+92 332 3928403</a>
+        <a href="mailto:malaikarizwan36@gmail.com">malaikarizwan36@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Malaika Rizwan</strong><br>
+      Graphic Designer
+    </div>
+    <div>© 2026 Malaika Rizwan</div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close">Close</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">Prev</button>
+    <img id="lbImg" alt="">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
